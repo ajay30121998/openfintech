@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Open fin tech</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  </head>
+
+  <body class="layout">
+    <div
+      id="header"
+      class="header"
+      (scroll)="scrolling($event)"
+      [ngClass]="{ 'header-trans': scroll1 }"
+    >
+      <div class="rightHeader">
+        <div class="navicon"></div>
+      </div>
+      <div class="leftHeader">
+        <div class="products" type="button">
+          <span>products</span>
+        </div>
+        <div class="solution" type="button">
+          <span>solution</span>
+        </div>
+        <div class="pricing" type="button">
+          <span>pricing</span>
+        </div>
+        <div class="loginbutton" type="button" >
+          <div class="login">login</div>
+        </div>
+        <div class="getstartedbutton" type="button">
+          <div class="getstarted">get started</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="makeItContent">We make it Super Simple</div>
+      <div class="underline"></div>
+      <div class="blob-small"></div>
+      <div class="circle"></div>
+      
+      
+      <div class="collect_img"></div>
+      <div class="calculator">
+        <div class="calhead">Eligibility Calculator</div>
+        <div class="calcontent">
+          Monthly Income
+          <h1>₹ {{ sliderincome }}</h1>
+        </div>
+
+        <input
+          class="slider1"
+          type="range"
+          id="slider1"
+          title="seek"
+          min="100000"
+          max="300000"
+          value="150000"
+          (change)="slider1val($event)"
+        />
+        <div class="rangefrom">
+            ₹ 1,00,000
+
+        </div>
+        <div class="rangeto">
+            ₹ 3,00,000
+        </div>
+
+        <div class="calcontent2">
+          Monthly Expense
+          <h1 style="font-family: Montserrat-SemiBold">₹ {{ sliderexpense }}</h1>
+        </div>
+        <input
+          class="slider2"
+          id="slider2"
+          min="0"
+          max="100000"
+          type="range"
+          value="50000"
+          (change)="slider2val($event)"
+        />
+
+        <div class="calcontent3">Repayment Tenure</div>
+        <div class="select1">
+          <select name="select" id="select1" class="select">
+            <option value="6">6 Months</option>
+            <option value="9">9 Months</option>
+            <option value="12">12 Months</option>
+          </select>
+        </div>
+
+        <div class="calcontent4">
+          Do you have any existing loans?
+          <label class="switch">
+            <input type="checkbox" checked />
+            <span class="slider round"></span>
+          </label>
+        </div>
+
+        <div class="calcontent5">EMI of Existing loan (optional)</div>
+        <input type="text" class="text1" />
+      </div>
+      <div class="loanCard">
+        <div
+          style="
+            margin-top: 70px;
+            margin-left: 30px;
+            font-size: 20px;
+            color: white;
+          "
+        >
+          Loan Amount
+
+          <div style="margin-top: 20px; color: white; font-size: 30px">
+            ₹ 1,00,000
+          </div>
+          <div style="margin-top: 20px; font-size: 20px; color: white">
+            Your EMI will be
+          </div>
+          <div style="margin-top: 20px; color: white; font-size: 30px">
+            ₹ 15,000
+          </div>
+          <button class="getmoneybtn" type="button">Get Money</button>
+        </div>
+      </div> 
+      <div class="accounting_dots_left"></div>
+      <div class="accounting_dots_right"></div>
+    </div>
+
+    <div class="footer">
+      <div class="card1">
+        <div class="card1img"></div>
+        <div class="cardboldfont">Quick cash disbursement</div>
+        <div class="cardregfont">
+          Get terms loans that your business needs within 72 hrs
+        </div>
+      </div>
+      <div class="card2">
+        <div class="card2img"></div>
+        <div class="cardboldfont">Low-interest rate</div>
+        <div class="cardregfont">
+          Achieve your financial goals with an amazing interest rate starting at
+          13% per annum
+        </div>
+      </div>
+      <div class="card3">
+        <div class="card3img"></div>
+
+        <div class="cardboldfont">Zero paperwork</div>
+        <div class="cardregfont">
+          Get started instantly by submitting only your basic details & bank
+          statements
+        </div>
+      </div>
+      <div class="card4">
+        <div class="card4img"></div>
+        <div class="cardboldfont">Ace your business finances</div>
+        <div class="cardregfont">
+          Manage banking, accounting & everything in between, on one platform
+        </div>
+      </div>
+      <div class="card5">
+        <div class="card5img"></div>
+        <div class="cardboldfont">Loans to fight COVID-19</div>
+        <div class="cardregfont">
+          Zero EMI for first 3 months on Back-to-Business loans of upto 1 lakh
+        </div>
+      </div>
+
+      <div class="footer_bg"></div>
+      <div class="footer_Heading">Boost your business with Open</div>
+      <div class="footer_Content">
+        Get your hands on a term loan that’s crafted for your business
+      </div>
+      <div class="footer_heading_underline"></div>
+      <div class="open_button" type="button" >
+        <div class="open_button_content">Get an Open Account</div>
+      </div>
+    </div>
+  </body>
+</html>
