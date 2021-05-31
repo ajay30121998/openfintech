@@ -46,7 +46,7 @@ export class AppComponent implements OnInit {
     this.max = 300000;
     this.value = 150000;
     this.sliderincome = 150000;
-    console.log(this.min, this.max, this.value);
+    // console.log(this.min, this.max, this.value);
 
     slider1.style.background = `linear-gradient(to right, #663399 0%, #663399 ${
       ((this.value - this.min) / (this.max - this.min)) * 100
