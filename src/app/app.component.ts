@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, ElementRef } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 @Component({
   selector: "app-root",
   templateUrl: "./app.component.html",
@@ -54,15 +54,6 @@ export class AppComponent implements OnInit {
       ((this.value - this.min) / (this.max - this.min)) * 100
     }%, #DEE2E6 100%)`;
 
-    
-
-    // slider1.oninput = function () {
-    //   this.style.background = `linear-gradient(to right, #663399 0%, #663399 ${
-    //     ((this.value - this.min) / (this.max - this.min)) * 100
-    //   }%, #DEE2E6 ${
-    //     ((this.value - this.min) / (this.max - this.min)) * 100
-    //   }%, #DEE2E6 100%)`;
-    // };
   }
 
   slider2() {
@@ -79,13 +70,6 @@ export class AppComponent implements OnInit {
       ((this.value - this.min) / (this.max - this.min)) * 100
     }%, #DEE2E6 100%)`;
 
-    // slider2.oninput = function () {
-    //   this.style.background = `linear-gradient(to right, #663399 0%, #663399 ${
-    //     ((this.value - this.min) / (this.max - this.min)) * 100
-    //   }%, #DEE2E6 ${
-    //     ((this.value - this.min) / (this.max - this.min)) * 100
-    //   }%, #DEE2E6 100%)`;
-    // };
   }
 
   slider1val(e) {
